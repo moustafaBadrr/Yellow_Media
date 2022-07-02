@@ -4,7 +4,7 @@ Task Provided From Yellow Media
 ## Hey!!
 I hope you are doing well.
 
-#Let's start our journy
+# Let's start our journy
 
 To run this app you have to follow below steps
 
