@@ -5,12 +5,12 @@ if (isset($_POST['password']) && $_POST['password'] == $_POST['repeated_password
     if (!($connection->query($insert_users) === TRUE)) {
         echo "Error: " . $insert_cateogry . "<br>" . $connection->error;
     }else{
-        header('Location: http://localhost/Yellow_Pages/Views/login.php');
+        header('Location: http://localhost/Yellow_Media/Yellow_Pages/Views/login.php');
     }
 } else {
     // header('Location: http://localhost/Yellow_Pages/signup.php');
     echo "<script>
         alert('Two Passwords Not Matched');
-        window.location.href='http://localhost/Yellow_Pages/index.php';
+        window.location.href='http://localhost/Yellow_Media/Yellow_Pages/index.php';
         </script>";
 }

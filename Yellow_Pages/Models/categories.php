@@ -1,4 +1,5 @@
 <?php
+
 namespace Models;
 
 class Category
@@ -32,7 +33,7 @@ class Category
       if (!($connection->query($insert_cateogry) === TRUE)) {
          echo "Error: " . $insert_cateogry . "<br>" . $connection->error;
       } else {
-         header('Location: http://localhost/Yellow_Pages/Views/welcome.php');
+         header('Location: http://localhost/Yellow_Media/Yellow_Pages/Views/welcome.php');
       }
 
       $connection->close();

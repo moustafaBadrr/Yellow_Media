@@ -108,7 +108,7 @@ class Company
 		if (!($connection->query($insert_data_query) === TRUE)) {
 			echo "Error: " . $insert_data_query . "<br>" . $connection->error;
 		} else {
-			header('Location: http://localhost/Yellow_Pages/Views/welcome.php');
+			header('Location: http://localhost/Yellow_Media/Yellow_Pages/Views/welcome.php');
 		}
 
 		$connection->close();
