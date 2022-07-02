@@ -1,0 +1,99 @@
+:root {
+  --font-default: Open Sans, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-primary: Roboto, sans-serif;
+  --font-secondary: Work Sans, sans-serif;
+}
+
+:root {
+  --color-default: #000000;
+  --color-primary: #10e76d;
+  --color-secondary: #18191a;
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  overflow-x: hidden;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#fc2c77),
+    to(#6c4079)
+  );
+  background: -webkit-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+  background: -moz-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+  background: -o-linear-gradient(bottom left, #fc2c77 0%, #6c4079 100%);
+  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+}
+
+.container {
+  overflow-x: hidden;
+  padding: 0;
+}
+.container .info {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+  .container .info {
+    padding: 0 50px;
+  }
+}
+
+.container .info h2 {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  font-size: 56px;
+  font-weight: 700;
+  position: relative;
+  color: aliceblue;
+}
+
+.container .info h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color:#000000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .container .info h2 {
+    font-size: 36px;
+  }
+}
+
+.container .info p {
+  color: rgba(255, 254, 254, 0.8);
+  font-size: 18px;
+}
+
+.container .info .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: rgb(255, 255, 255);
+  border: 2px solid #e79510;
+}
+
+.container .info .btn-get-started:hover {
+  background: #e79510;
+}
